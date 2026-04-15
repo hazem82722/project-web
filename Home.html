@@ -1,74 +1,71 @@
 <!DOCTYPE html>
 
 <head>
-
     <title>Car Sales Website - Home</title>
+    <link rel="stylesheet" href="home.css">
 </head>
 
-<body>
+<body id="home-page">
 
-
-    <header>
-        <h1>Welcome to Our Car Sales Website</h1>
-        <p>Your trusted place to buy and explore cars easily.</p>
+    <header class="main-header">
+        <h1 class="title">Welcome to Our Car Sales Website</h1>
+        <p class="subtitle">Your trusted place to buy and explore cars easily.</p>
     </header>
 
     <hr>
 
-
-    <nav>
-        <a href="Home.html"><img src="Image/home.png" width="50" height="50"></a>
-        <a href="#"><img src="Image/car.png" width="50" height="50"></a>
-        <a href="AboutUs.html"><img src="Image/aboutus.png" width="50" height="50"></a>
-        <a href="Contact Us.html"> <img src="Image/contactus.png" width="50" height="50"></a>
-
+    <nav class="navbar">
+        <a href="Home.html"><img src="Image/home.png" class="nav-icon"></a>
+        <a href="#"><img src="Image/car.png" class="nav-icon"></a>
+        <a href="AboutUs.html"><img src="Image/aboutus.png" class="nav-icon"></a>
+        <a href="Contact Us.html"><img src="Image/contactus.png" class="nav-icon"></a>
     </nav>
 
     <hr>
 
+    <div class="about">
 
-    <h2>About Our Website</h2>
-    <p>
-        This website helps users find and buy cars online in a simple and fast way.
-        Customers can browse different car models, compare prices, and view detailed
-        information about each vehicle before making a decision.
-    </p>
+        <h2>About Our Website</h2>
 
-    <p>
-        Our goal is to provide a reliable platform that connects car sellers and buyers
-        in one place with clear information and easy navigation.
-    </p>
+        <p>
+            This website helps users find and buy cars online in a simple and fast way.
+            Customers can browse different car models, compare prices, and view detailed
+            information about each vehicle before making a decision.
+        </p>
 
+        <p>
+            Our goal is to provide a reliable platform that connects car sellers and buyers
+            in one place with clear information and easy navigation.
+        </p>
+
+    </div>
 
     <hr>
 
+    <div class="cars">
 
+        <h2 class="section-title">Featured Cars</h2>
 
-    <h2>Featured Cars</h2>
+        <div class="cars-row">
 
+            <div class="car-card">
+                <img src="Image/carhome.webp" class="car-image">
+                <a href="car1.html" class="car-button">details</a>
+            </div>
 
-    <h3>Car Highlight 1</h3>
-    <!-- Add image here -->
-    <img src="Image/1.jpg" width="300" alt="Car">
-    <p>معلومات عن السيارة </p>
+            <div class="car-card">
+                <img src="Image/2.png" class="car-image">
+                <a href="car2.html" class="car-button">details</a>
+            </div>
 
+            <div class="car-card">
+                <img src="Image/3.jpg" class="car-image">
+                <a href="car3.html" class="car-button">details</a>
+            </div>
 
+        </div>
 
-    <h3>Car Highlight 2</h3>
-    <!-- Add image here -->
-    <img src="Image/2.png" width=300>
-    <p>معلومات عن السيارة </p>
-
-
-    <h3>Car Highlight 3</h3>
-    <!-- Add image here -->
-    <img src="Image/3.jpg" width="300">
-    <p>معلومات عن السيارة</p>
-
-
-
-
-
+    </div>
 
 </body>
 
