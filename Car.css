@@ -7,19 +7,18 @@ body {
 
 .car-container {
     display: flex;        
-    flex-wrap: wrap;      /* السماح للبطاقات بالنزول لسطر جديد إذا انتهت المساحة */
-    justify-content: center; /* توزيع البطاقات في المنتصف */
-    gap: 20px;            /* ترك مسافة 20 بيكسل بين كل بطاقة وأخرى */
+    flex-wrap: wrap;      
+    justify-content: center; 
+    gap: 20px;            
     padding: 20px;
-    direction: rtl;       /* ضمان أن الترتيب يبدأ من اليمين لليسر */
+    direction: rtl;       
 }
 
-/* تنسيق البطاقة الواحدة */
 .car-card {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 280px;         /* تحديد عرض ثابت للبطاقة لضمان وجود مساحة لغيرها بجانبها */
+    width: 280px;         
     padding: 15px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
