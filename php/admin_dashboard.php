@@ -100,9 +100,7 @@ $orders_result = $conn->query("SELECT * FROM orders");
 
 <h1>Admin Dashboard</h1>
 
-<p>
-    <a href="databaseCars.php">View Customer Page</a>
-</p>
+
 
 <hr>
 
@@ -147,7 +145,7 @@ $orders_result = $conn->query("SELECT * FROM orders");
                     <td>
                         <a href='admin_dashboard.php?delete_car={$car['ID']}' onclick=\"return confirm('Delete this car?')\">Delete</a>
                     </td>
-                  </tr>";
+                </tr>";
         }
     } else {
         echo "<tr><td colspan='7'>No cars found</td></tr>";
@@ -188,7 +186,7 @@ $orders_result = $conn->query("SELECT * FROM orders");
                         <a href='admin_dashboard.php?edit_order={$order['id']}'>Edit</a> |
                         <a href='admin_dashboard.php?delete_order={$order['id']}' onclick=\"return confirm('Delete this order?')\">Delete</a>
                     </td>
-                  </tr>";
+                </tr>";
         }
     } else {
         echo "<tr><td colspan='9'>No orders found</td></tr>";
