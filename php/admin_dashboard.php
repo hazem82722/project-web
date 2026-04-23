@@ -33,8 +33,4 @@ $orders = $conn->query("SELECT * FROM orders");
 <td><?php echo $o['full_name']; ?></td>
 </tr>
 <?php } ?>
-<<<<<<< HEAD
 </table>
-=======
-</table>
->>>>>>> d9fe65461f25fab10e986dc22ec1d399feea0042
