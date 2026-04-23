@@ -103,3 +103,40 @@ body {
 .car-button:hover {
     background-color: #1f8a4d;
 }
+
+/* الخلفية التي تغطي كل شيء */
+.modal {
+  display: flex; /* يجعل المحتوى في المنتصف */
+  position: fixed; 
+  z-index: 1000; 
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6); /* خلفية سوداء شفافة */
+  align-items: center;
+  justify-content: center;
+}
+
+/* صندوق الرسالة الأبيض في النص */
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+/* تنسيق الزر */
+.modal-content button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.modal-content button:hover {
+  background-color: red; /* يتغير لونه عند التأشير */
+}
