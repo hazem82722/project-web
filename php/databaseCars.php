@@ -8,6 +8,6 @@ if (isset($_POST['buy_submit'])) {
 
     $conn->query("INSERT INTO orders (car_id, full_name) VALUES ('$car_id', '$name')");
 
-    echo "تم الشراء";
+    echo "Done";
 }
 ?>
