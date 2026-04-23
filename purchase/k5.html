@@ -41,22 +41,6 @@
       <a href="../Car.html">Back</a>
     </form>
   </div>
-   <script>
-function validateOrder() {
-    let fullName = document.getElementById("fullName").value;
-    let email = document.getElementById("email").value;
-    let phone = document.getElementById("phone").value;
-    let address = document.getElementById("address").value;
-    let price = document.getElementById("price").value;
-
-    if (fullName == "" || email == "" || phone == "" || address == "" || price == "") {
-        alert("⚠️ Please fill in all the information:\n(Full Name, Email, Phone, Address, and Paid Price)");
-    } else {
-        alert("✅ Order Confirmed!\n\nThank you, " + fullName + ".\nWe have received your request for the price: " + price + ".\nOur team will contact you soon on: " + phone);
-        
-        document.getElementById("orderForm").reset(); 
-    }
-}
-</script>
+   
 </body>
 </html>
