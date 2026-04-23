@@ -40,5 +40,27 @@
       <a href="../Car.html">Back</a>
     </form>
   </div>
+  <script>
+function validateOrder() {
+    // 1. جلب القيم من الخانات بناءً على الصورة
+    let fullName = document.getElementById("fullName").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let address = document.getElementById("address").value;
+    let price = document.getElementById("price").value;
+
+    // 2. التحقق من أن جميع الحقول ممتلئة
+    if (fullName == "" || email == "" || phone == "" || address == "" || price == "") {
+        // رسالة تنبيه في حال وجود نقص
+        alert("⚠️ Please fill in all the information:\n(Full Name, Email, Phone, Address, and Paid Price)");
+    } else {
+        // 3. رسالة نجاح مخصصة عند اكتمال البيانات
+        alert("✅ Order Confirmed!\n\nThank you, " + fullName + ".\nWe have received your request for the price: " + price + ".\nOur team will contact you soon on: " + phone);
+        
+        // مسح الخانات بعد الإرسال الناجح
+        document.getElementById("orderForm").reset(); // تأكد أن الـ form لديه id="orderForm"
+    }
+}
+</script>
 </body>
 </html>
