@@ -62,7 +62,20 @@
     <p>Sunday - Thursday: 9:00 AM - 6:00 PM</p>
     <p>Friday and saturday: Closed</p>
 
+<script>
+    function validateContact() {
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
 
+        if (email == "" || message == "") {
+            alert("Please fill in both your email and message!");
+        } else {
+            alert("Thank you! Your message has been received. We will contact you at: " + email);
+            
+            document.getElementById("contactForm").reset();
+        }
+    }
+    </script>
 
 
 
