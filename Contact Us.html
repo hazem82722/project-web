@@ -2,18 +2,12 @@
 
 <head>
 
-
+    <link rel="stylesheet" href="Contact Us.css">
     <title>Contact Us - Car Sales Website</title>
 </head>
 
 <body>
 
-
-    <h1>Contact Us</h1>
-    <p>Call any time </p>
-
-
-    <hr>
 
 
     <nav>
@@ -26,60 +20,50 @@
 
     <hr>
 
+    <div class="page-container">
 
+        <div class="blue-banner">
+            <h1>CONTACT US</h1>
+        </div>
 
-    <h2>Contact Information</h2>
+        <div class="layout-container">
 
-    <p><strong>Email:</strong> Cars@gmail.com </p>
-    <p><strong>Phone:</strong> +96654154842 </p>
-    <p><strong>Address:</strong> medina Saudi Arabia</p>
+            <div class="left-column">
+                <div class="card">
+                    <h3>Contact Information</h3>
+                    <p><img src="Image/contactus.png" width="30" height="30" class="icon"> +966 54 154 842</p>
+                    <p><img src="Image/Email.webp" width="30" height="30" class="icon"> Cars@gmail.com</p>
+                    <p><img src="Image/location.webp" width="30" height="30" class="icon"> Al Madinah Al Munawwarah,
+                        Saudi Arabia</p>
+                </div>
 
+                <div class="card">
+                    <h3>Business Hours</h3>
+                    <p>Sunday - Thursday: 9:00 AM - 6:00 PM</p>
+                    <p>Friday - Saturday: Closed</p>
+                </div>
+            </div>
 
-    <hr>
+            <div class="right-column">
+                <div class="card form-card">
+                    <h3>Send Us a Message</h3>
+                    <form>
+                        <label>Your Email</label>
+                        <input type="email" name="user-email" required>
 
-    <h2>Send Us a Message</h2>
+                        <label>Your Message</label>
+                        <input type="user-message" rows="6" placeholder="Type your message here"></textarea>
 
-    <form action="mailto:Cars@gmail.com" method="post" enctype="text/plain">
-        <p>
-            <label for="email">Your Email:</label><br>
-            <input type="email" id="email" name="email" required>
-        </p>
+                        <div class="buttons">
+                            <button type="submit" class="btn-send">Send Message</button>
+                            <button type="reset" class="btn-clear">Clear Form</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
 
-        <p>
-            <label for="message">Your Message:</label><br>
-            <textarea id="message" name="message" rows="5" cols="40" required></textarea>
-        </p>
-
-        <p>
-            <input type="submit" value="Send">
-            <input type="reset" value="Clear">
-        </p>
-    </form>
-
-
-    <h2>Business Hours</h2>
-
-    <p>Sunday - Thursday: 9:00 AM - 6:00 PM</p>
-    <p>Friday and saturday: Closed</p>
-
-<script>
-    function validateContact() {
-        let email = document.getElementById("email").value;
-        let message = document.getElementById("message").value;
-
-        if (email == "" || message == "") {
-            alert("Please fill in both your email and message!");
-        } else {
-            alert("Thank you! Your message has been received. We will contact you at: " + email);
-            
-            document.getElementById("contactForm").reset();
-        }
-    }
-    </script>
-
-
-
-
+        </div>
+    </div>
 
 </body>
 
