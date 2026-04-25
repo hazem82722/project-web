@@ -1,81 +1,107 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Car Sales Website - Home</title>
+    <title>Car Sales Website</title>
     <link rel="stylesheet" href="home.css">
+    
 </head>
 
-<body id="home-page">
-    
+<body>
 
     <div class="title">
-    Welcome to Our Car Sales Website
-</div>
+        Welcome to Our Car Sales Website
+    </div>
 
-    <nav class="icon">
-        <a href="Home.html"><img src="Image/home.png" class="nav-icon"></a>
-        <a href="Car.html"><img src="Image/car-icon.png" class="nav-icon"></a>
-        <a href="AboutUs.html"><img src="Image/aboutus.png" class="nav-icon"></a>
-        <a href="Contact Us.html"><img src="Image/contactus.png" class="nav-icon"></a>
+    <nav>
+        <a href="Home.html"><img src="Image/home.png"></a>
+        <a href="Car.html"><img src="Image/car-icon.png"></a>
+        <a href="AboutUs.html"><img src="Image/aboutus.png"></a>
+        <a href="Contact Us.html"><img src="Image/contactus.png"></a>
     </nav>
 
     <div class="about">
         <h2>About Our Website</h2>
-
         <p>
             This website helps users find and buy cars online in a simple and fast way.
-            Customers can browse different car models, compare prices, and view detailed
-            information about each vehicle before making a decision.
+            Customers can browse car models, compare prices, and view car details.
         </p>
-
         <p>
-            Our goal is to provide a reliable platform that connects car sellers and buyers
-            in one place with clear information and easy navigation.
+            Our goal is to connect car sellers and buyers in one easy website.
         </p>
     </div>
 
     <div class="cars">
-        <h2 class="section-title">Featured Cars</h2>
+        <h2>Featured Cars</h2>
 
         <div class="cars-row">
 
             <div class="car-card">
-                <img src="Image/CARS/Ford mustang.avif" class="car-image">
+                <img src="Image/CARS/Ford mustang.avif">
                 <h3>Ford Mustang</h3>
-                <a href="our cars/Ford Mustang.html" class="car-button">Details</a>
+                <a href="our cars/Ford Mustang.html">Details</a>
             </div>
 
             <div class="car-card">
-                <img src="Image/CARS/2019_BMW.jpg" class="car-image">
+                <img src="Image/CARS/2019_BMW.jpg">
                 <h3>BMW X5</h3>
-                <a href="our cars/BMW.html" class="car-button">Details</a>
+                <a href="our cars/BMW.html">Details</a>
             </div>
 
             <div class="car-card">
-                <img src="Image/CARS/k5.png" class="car-image">
+                <img src="Image/CARS/k5.png">
                 <h3>K5</h3>
-                <a href="our cars/K5.html" class="car-button">Details</a>
+                <a href="our cars/K5.html">Details</a>
             </div>
 
         </div>
     </div>
+
     <div id="myModal" class="modal">
-  <div class="modal-content">
-    <h2>Welcome to Drive Line!</h2>
-    <p>We hope you find your dream car with us.</p>
-    <button onclick="hideMessage()">OK</button>
-  </div>
-</div>
-<script>
-    
-  function hideMessage() {
-    document.getElementById("myModal").style.display = "none";
-  }
+        <div class="modal-box">
+            <h2>Welcome to Drive Line!</h2>
+            <p>We hope you find your dream car with us.</p>
+            <button onclick="hideMessage()">OK</button>
+        </div>
+    </div>
+
+    <script>
+        function hideMessage() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
 
     
-</script>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>Drive Line</h3>
+            <p>Find your dream car</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="Home.html">Home</a><br>
+            <a href="Car.html">Cars</a><br>
+            <a href="AboutUs.html">About</a><br>
+            <a href="Contact Us.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: Cars@gmail.com</p>
+            <p>Phone: +966 541078169</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Drive Line. All rights reserved.</p>
+    </div>
+
+</footer>
+
 
 </body>
-
 </html>

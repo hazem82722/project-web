@@ -49,4 +49,6 @@ $orders = $conn->query("SELECT * FROM orders");
 <td><?php echo $o['paid_price']; ?></td>
 </tr>
 <?php } ?>
-</table>
+
+
+
