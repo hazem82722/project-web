@@ -135,3 +135,9 @@ form textarea {
     border-radius: 5px;
     margin-left: 10px;
 }
+nav {
+    text-align: center;
+    background-color: white;
+    padding: 12px;
+}
+

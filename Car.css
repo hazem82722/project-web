@@ -52,3 +52,9 @@ body {
 .buy-btn:hover {
     background-color: #146c43;
 }
+nav {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 12px;
+}
+
