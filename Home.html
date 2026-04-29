@@ -38,37 +38,22 @@
             <div class="car-card">
                 <img src="Image/CARS/Ford mustang.avif">
                 <h3>Ford Mustang</h3>
-                <a href="our cars/Ford Mustang.html">Details</a>
-            </div>
+                <a href="our cars/Ford Mustang.html" onclick="showCar('Ford Mustang')">Details</a>            </div>
 
             <div class="car-card">
                 <img src="Image/CARS/2019_BMW.jpg">
                 <h3>BMW X5</h3>
-                <a href="our cars/BMW.html">Details</a>
-            </div>
+                <a href="our cars/BMW.html" onclick="showCar('BMW X5')">Details</a>            </div>
 
             <div class="car-card">
                 <img src="Image/CARS/k5.png">
                 <h3>K5</h3>
-                <a href="our cars/K5.html">Details</a>
-            </div>
+                <a href="our cars/K5.html" onclick="showCar('K5')">Details</a>            </div>
 
         </div>
     </div>
 
-    <div id="myModal" class="modal">
-        <div class="modal-box">
-            <h2>Welcome to Drive Line!</h2>
-            <p>We hope you find your dream car with us.</p>
-            <button onclick="hideMessage()">OK</button>
-        </div>
-    </div>
 
-    <script>
-        function hideMessage() {
-            document.getElementById("myModal").style.display = "none";
-        }
-    </script>
 
     
 <footer class="footer">
@@ -101,6 +86,14 @@
     </div>
 
 </footer>
+
+<script>
+    alert("Welcome to Drive Line");
+
+    function showCar(name) {
+        alert("You selected: " + name);
+    }
+</script>
 
 
 </body>

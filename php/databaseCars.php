@@ -20,7 +20,7 @@ if (isset($_POST['buy_submit'])) {
     if ($conn->query($sql)) {
         echo "Done";
     } else {
-        echo "خطأ: " . $conn->error;
+        echo "Error: " . $conn->error;
     }
 }
 ?>

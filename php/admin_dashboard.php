@@ -1,12 +1,14 @@
 <?php
+/*/هنل يسوي اتصال ب قاعدة البيانات */
 include "db.php";
 
+/*/هنا يسوي استدعاء البيانات من الجدول */
 $cars = $conn->query("SELECT * FROM project_db");
 $orders = $conn->query("SELECT * FROM orders");
 ?>
 
 <h2>Cars</h2>
-<table border="1">
+<table border="3">
 <tr>
 <th>ID</th>
 <th>Brand</th>
@@ -27,7 +29,7 @@ $orders = $conn->query("SELECT * FROM orders");
 <br><br>
 
 <h2>Orders</h2>
-<table border="1">
+<table border="3">
 <tr>
 <th>ID</th>
 <th>Car ID</th>
